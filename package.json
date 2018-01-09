@@ -1,0 +1,47 @@
+{
+    "name": "back",
+    "version": "1.0.0",
+    "description": "Backend with mongoose",
+    "main": "index.ts",
+    "scripts": {
+        "test-js": "echo \"Error: no test specified\" && exit 1",
+        "ts-js": "tsc -w",
+        "server-js": "nodemon ./build/index.js",
+        "start-js": "tsc && node ./build/index.js",
+        "debug": "npm run build:live:debug",
+        "build:live:debug": "nodemon --watch config/**/*.ts --exec ts-node --inspect index.ts",
+        "start": "ts-node index.ts"
+    },
+    "keywords": [
+        "MEAN",
+        "Mongoose",
+        "Node.js"
+    ],
+    "author": "Ramin Armanfar",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "compression": "^1.7.1",
+        "cookie-parser": "^1.4.3",
+        "cors": "^2.8.4",
+        "express": "^4.16.2",
+        "helmet": "^3.9.0",
+        "mongoose": "5.0.0-rc1",
+        "morgan": "^1.9.0",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.16.8",
+        "@types/cookie-parser": "^1.4.1",
+        "@types/cors": "2.8.3",
+        "@types/express": "4.11.0",
+        "@types/mongoose": "4.7.32",
+        "@types/node": "8.5.5",
+        "core-js": "^2.5.3",
+        "nodemon": "1.14.7",
+        "shared-tslint-rules": "^3.0.0",
+        "ts-node": "^4.1.0",
+        "tslint": "5.8.0",
+        "typescript": "2.6.2"
+    }
+}
